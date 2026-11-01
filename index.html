@@ -15,6 +15,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+
+  /* নতুন যোগ করা সেন্টার প্রোপ্রাইটর বক্সের জন্য */
+.contact-proprietor {
+  max-width: 450px;
+  margin: 0 auto 25px auto; /* উপরে-নিচে গ্যাপ, ডানে-বামে সেন্টার */
+  text-align: center;
+  border-left: none; /* আগের বামের সবুজ বর্ডার সরানো হলো */
+  border-bottom: 4px solid var(--green); /* নিচে সবুজ বর্ডার */
+}
 :root {
   --green: #137547;
   --dark-green: #075333;
@@ -556,24 +565,42 @@ footer a { color: #ffbd7c; }
     </div>
 
     <div class="contact-grid">
-      <div class="contact-card reveal">
-        <h3>📍 Office Address</h3>
-        <p>Tanbazar, Narayanganj, Bangladesh</br> Head Office: 129-130 Motijheel C/A Dhaka-1000</p>
-      </div>
+         <!-- Proprietor Box (৪টি বক্সের ওপরে এবং মাঝখানে) -->
+    <div class="contact-card contact-proprietor reveal">
+      <h3>👤 Proprietor</h3>
+      <p>Hasan Mahmud</p>
+    </div>
+
+    <!-- ৪টি বক্সের গ্রিড -->
+    <div class="contact-grid">
+      
+      <!-- Phone Number Box -->
       <div class="contact-card reveal">
         <h3>📞 Phone Number</h3>
         <p>
-          proprietor: Hasan Mahmud </br>
           <a href="tel:+8801865685089">+88 01865685089</a><br>
           <a href="tel:+8801780026055">+88 01780026055</a>
         </p>
       </div>
+
+      <!-- Office Address Box -->
+      <div class="contact-card reveal">
+        <h3>📍 Office Address</h3>
+        <p>
+          Tanbazar, Narayanganj, Bangladesh<br>
+          Head Office: 129-130 Motijheel C/A Dhaka-1000
+        </p>
+      </div>
+
+      <!-- Email Address Box -->
       <div class="contact-card reveal">
         <h3>✉ Email Address</h3>
         <p>
           <a href="mailto:mahmud.hasan5089@gmail.com">mahmud.hasan5089@gmail.com</a>
         </p>
       </div>
+
+      <!-- Official Website Box -->
       <div class="contact-card reveal">
         <h3>🌐 Official Website</h3>
         <p>
@@ -582,6 +609,8 @@ footer a { color: #ffbd7c; }
           </a>
         </p>
       </div>
+
+    </div>
     </div>
 
     <div class="contact-cta reveal">
